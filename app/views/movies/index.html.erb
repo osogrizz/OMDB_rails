@@ -1,0 +1,9 @@
+<h1>Movies index</h1>
+
+
+
+<%= form_for ("movies", :method get) do |f| %>
+<%= f.label :movies %>
+<%= f.text_field :title %>
+<%= f.submit %>
+<% end %>
