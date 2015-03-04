@@ -1,9 +1,10 @@
-<h1>Movies index</h1>
+<h1>Movie search</h1>
+
+<!-- # http://www.omdbapi.com/?  might need this--> 
 
 
-
-<%= form_for ("movies", :method get) do |f| %>
+<%= simple_form_for [@movies,Movie.new] do |f| %>
 <%= f.label :movies %>
 <%= f.text_field :title %>
-<%= f.submit %>
+<%= f.submit("search") %>
 <% end %>
